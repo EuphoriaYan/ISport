@@ -110,21 +110,22 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.bt_login: // 登录
                 if (checkInput()) {
-/*
-                    if (loginPassword.equals("123456")&&loginNumber.equals("123456"))
+
+                    if (loginNumber.equals("a123456")&&loginPassword.equals("123456"))
                     {
-                        LocalUser.getInstance().setUserid("123456");
+                        LocalUser.getInstance().setUserid("a123456");
                         LocalUser.getInstance().setNickName("zhangsan");
-                        LocalUser.getInstance().setSex("female");
-                        LocalUser.getInstance().setHeight("160");
-                        LocalUser.getInstance().setWeight("50");
+                        LocalUser.getInstance().setSex("male");
+                        LocalUser.getInstance().setHeight("175");
+                        LocalUser.getInstance().setWeight("65");
                         LocalUser.getInstance().setLoginPassword("123456");
+                        LocalUser.getInstance().setFavouriteSport("run");
                         Message msg = new Message();
                         msg.what = LOGIN_RIGHT;
                         mHandler.sendMessage(msg);
                         break;
                     }
-*/
+
                     showProgressDialog(this,"正在登录...");
                     final String url = GlobalValues.baseUrl + "information/search/check";
                     new Thread(new Runnable() {
