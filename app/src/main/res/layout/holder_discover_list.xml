@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/tv_discover_listholder_reason"
+            android:text="原因：聚类推荐"
+            android:textColor="@color/alpha_6"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@mipmap/nav_me_normal"/>
+                <!--app:placeholderImage="@drawable/notification_template_icon_bg"
+                app:placeholderImageScaleType="centerCrop" -->
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.01">
+
+                <TextView
+                    android:id="@+id/tv_discover_listholder_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/alpha_6"/>
+
+                <TextView
+                    android:id="@+id/tv_discover_listholder_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textColor="#B4B4B9"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_discover_listholder_like"
+                android:layout_height="30dip"
+                android:layout_width="30dip"
+                android:background="@mipmap/btn_star_big_off"
+                android:layout_gravity="center_vertical">
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

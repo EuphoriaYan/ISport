@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@mipmap/nav_me_normal"/>
+
+            <TextView
+                android:id="@+id/tv_friend_listholder_nickname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                android:text="李四"
+                android:textColor="@color/gray_3"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@mipmap/goimg"
+                android:layout_gravity="center_vertical">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

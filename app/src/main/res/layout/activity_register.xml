@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        style="@style/topbar_bg">
+
+        <TextView
+            style="@style/topbar_title"
+            android:text="注册用户"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/register_edit_text_layout"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_register_userid"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:maxLines="1"
+            android:textColorHint="@color/alpha_3"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_3"/>
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:hint="请输入密码(6-12位)"
+            android:inputType="textPassword"
+            android:textColorHint="@color/alpha_3"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_3"/>
+
+        <EditText
+            android:id="@+id/et_register_password_again"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/alpha_3"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_3"/>
+
+        <EditText
+            android:id="@+id/et_register_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:maxLines="1"
+            android:textColorHint="@color/alpha_3"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_3"/>
+
+        <EditText
+            android:id="@+id/et_register_sex"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:hint="请输入性别"
+            android:focusable="false"
+            android:textColorHint="@color/alpha_3"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alpha_3"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/bt_register_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_submit_normal"
+            android:text="下一步"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

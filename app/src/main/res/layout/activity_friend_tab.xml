@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip">
+
+        <RadioButton
+            android:id="@+id/rb_friend"
+            style="@style/friend_tab"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/bt_friend_select"
+            android:text="好友" />
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            style="@style/friend_tab"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/bt_discover_select"
+            android:text="发现" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

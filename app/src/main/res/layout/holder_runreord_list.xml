@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_listholder_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-8-1 16:37"
+            android:textColor="@color/alpha_9"/>
+
+        <TextView
+            android:id="@+id/tv_listholder_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_listholder_createtime"
+            android:text="2.06KM"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:08:32"
+            android:textSize="16sp"
+            android:id="@+id/tv_listholder_time"
+            android:layout_alignBaseline="@+id/tv_listholder_distance"
+            android:layout_alignBottom="@+id/tv_listholder_distance"
+            android:layout_toRightOf="@+id/tv_listholder_distance"
+            android:layout_toEndOf="@+id/tv_listholder_distance"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="配速: "
+            android:textSize="16sp"
+            android:id="@+id/tv_listholder_pace"
+            android:layout_toRightOf="@+id/tv_listholder_time"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="平均速度: "
+            android:textSize="16sp"
+            android:id="@+id/tv_listholder_avgspeed"
+            android:layout_below="@+id/tv_listholder_pace"
+            android:layout_toRightOf="@+id/tv_listholder_time"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

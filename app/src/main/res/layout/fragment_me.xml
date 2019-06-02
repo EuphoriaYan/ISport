@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/topbar_bg">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:maxLines="1"
+            android:text="张三"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderBackground="@color/colorPrimary"
+        ptr:ptrHeaderTextColor="@color/white"
+        android:id="@+id/ptr_sv_me"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <com.xinlan.discview.DiscView
+                    android:id="@+id/disc_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:dvBottomCircleIsShow="true"
+                    app:dvOuterCircleShow="false"
+                    app:dvStartRotateAngle="10"
+                    app:dvStrokenWidth="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_me_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="你离你第一个100KM，还有100KM，继续加油吧！"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_runrecord"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_me_history"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_history"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_me_history"
+                    android:text="跑步记录"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/ic_keyboard_arrow_right_black_18dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的分享记录"
+                android:textSize="15sp"
+                android:background="@color/alpha_3"/>
+
+            <com.isport.UI.ListViewInScrollView
+                android:id="@+id/lv_my_share_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/alpha_3"
+                android:dividerHeight="0.5dp"/>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>
